@@ -37,14 +37,26 @@
 	<dependency>
 		<groupId>org.reflections</groupId>
 		<artifactId>reflections</artifactId>
-		<version>0.9.11</version>
+		<version>0.9.10</version>
 	</dependency>
 	
 	<dependency>
     	<groupId>com.google.guava</groupId>
     	<artifactId>guava</artifactId>
     	<version>25.1-jre</version>
-	</dependency>	
+	</dependency>
+	
+	<dependency>
+    	<groupId>com.miglayout</groupId>
+    	<artifactId>miglayout-javafx</artifactId>
+    	<version>5.1</version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>commons-io</groupId>
+    	<artifactId>commons-io</artifactId>
+    	<version>2.6</version>
+	</dependency>
   </dependencies>
   
   <build>
@@ -67,7 +79,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>app.main.App_Gui</mainClass>
+							<mainClass>app.main.Gui</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -80,7 +92,7 @@
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>app.main.App_Gui</mainClass>
+							<mainClass>app.main.Gui</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
