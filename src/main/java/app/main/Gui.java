@@ -55,7 +55,7 @@ public class Gui extends Application {
 		border.setCenter(addCenterBox());
 		border.setBottom(addBottomBox());
 
-		Scene scene = new Scene(border, 1400, 590);
+		Scene scene = new Scene(border, 1200, 590);
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("RailwayApplication_Test");
 		primaryStage.setResizable(false);

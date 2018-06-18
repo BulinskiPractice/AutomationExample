@@ -47,9 +47,7 @@ public class RMV_1_0_0_1 {
 		right_text_area.appendText(logger.getName() + " - Starting testcase\n");
 		startTest(driver, wait, center_text_area, right_text_area);
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-		this.setTest_end(true);
-		center_text_area.appendText(logger.getName() + " - Finished testcase\n");
-		
+		this.setTest_end(true);		
 	}
 	
 	public void startTest(WebDriver driver, WebDriverWait wait, TextArea center_text_area, TextArea right_text_area) {
@@ -83,6 +81,7 @@ public class RMV_1_0_0_1 {
 			center_text_area.appendText(logger.getName() + " - User successfully logged out\n");		
 			
 			right_text_area.appendText(logger.getName() + " - Testcase successfully completed\n");
+			center_text_area.appendText(logger.getName() + " - Finished testcase\n");
 			
 			Platform.runLater(new Runnable() {
 				@Override
